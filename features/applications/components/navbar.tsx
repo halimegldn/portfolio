@@ -4,9 +4,15 @@ import { Code, Download, Github, Linkedin, Mail, Rocket, User } from "lucide-rea
 
 export function Navbar() {
 
-    const links = [
+    const navbarLinks = [
         { href: "/", icon: User, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Anasayfa" },
         { href: "#projects", icon: Code, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Projeler" },
+    ]
+
+    const appLinks = [
+        { href: "/", icon: Github, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
+        { href: "/", icon: Linkedin, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
+        { href: "/", icon: Mail, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
     ]
 
     return (
@@ -27,7 +33,7 @@ export function Navbar() {
                 </div>
                 <nav className="flex flex-col gap-6 text-base">
                     {
-                        links.map((l) => (
+                        navbarLinks.map((l) => (
                             <Link href={l.href} key={l.href}
                                 className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-200 relative"
                             >
@@ -40,8 +46,18 @@ export function Navbar() {
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
                     <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"></div>
+                    {
+                        appLinks.map((app) => (
+                            <Link
+                                href={app.href}
+                                className="p-3 rounded-xl bg-white/5 hover:bg-[#00ADB5]/20 hover:scale-110 transition-all duration-300 group"
+                            >
+                                <app.icon className={app.iconClass} />
+                            </Link>
+                        ))
+                    }
 
-                    <Link
+                    {/* <Link
                         href="#"
                         className="p-3 rounded-xl bg-white/5 hover:bg-[#00ADB5]/20 hover:scale-110 transition-all duration-300 group"
                     >
@@ -58,7 +74,7 @@ export function Navbar() {
                         className="p-3 rounded-xl bg-white/5 hover:bg-[#00ADB5]/20 hover:scale-110 transition-all duration-300 group"
                     >
                         <Mail className="w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             <div className="w-5/6 flex items-center justify-center p-16 relative z-10">
