@@ -4,6 +4,13 @@ import { Github, Linkedin, Mail, Download, Code, User, Rocket } from "lucide-rea
 import { AppCard } from "@/features/applications/components/app-card"
 
 export default function Home() {
+
+  const navbarLinks = [
+    { href: "/", icon: "User", title: "Anasayfa" },
+    { href: "/", icon: "User", title: "Anasayfa" },
+    { href: "/", icon: "User", title: "Anasayfa" }
+  ]
+
   return (
     <div className="min-h-screen">
       {/* Navbar */}
@@ -25,15 +32,15 @@ export default function Home() {
           <nav className="flex flex-col gap-6 text-base">
             <Link
               href="/"
-              className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-300 relative"
+              className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-200 relative"
             >
               <User className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span className="font-medium">Anasayfa</span>
-              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-0 bg-[#00ADB5] group-hover:h-8 transition-all duration-300 rounded-r"></div>
+              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-0 bg-[#00ADB5] group-hover:h-8 transition-all duration-200 rounded-r"></div>
             </Link>
             <Link
               href="#projects"
-              className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-300 relative"
+              className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-200 relative"
             >
               <Code className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span className="font-medium">Projelerim</span>
@@ -74,7 +81,7 @@ export default function Home() {
                     width={500}
                     height={500}
                     alt="Profil Resmi"
-                    className="object-cover w-full h-full shadow-2xl border-2 border-white/10 group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover w-full h-full shadow-2xl border-2 border-white/10 group-hover:scale-105 transition-transform duration-500 bg-white"
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-[#00ADB5] to-purple-500 p-4 rounded-2xl shadow-2xl">
@@ -82,7 +89,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className="w-1/2 space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center gap-2 text-[#00ADB5] text-sm font-medium tracking-wider uppercase">
@@ -137,9 +143,6 @@ export default function Home() {
       </div>
       {/* Projeler */}
       <section id="projects" className="min-h-screen bg-gradient-to-br from-[#2d3748] via-[#1a1d23] to-[#222831] relative">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width%3D%2260%22 height%3D%2260%22 viewBox%3D%220 0 60 60%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg fill%3D%22none%22 fillRule%3D%22evenodd%22%3E%3Cg fill%3D%22%2300ADB5%22 fillOpacity%3D%220.4%22%3E%3Ccircle cx%3D%2230%22 cy%3D%2230%22 r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]"></div>
-        </div>
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00ADB5] to-transparent"></div>
 
         <div className="relative z-10 flex items-center justify-center min-h-screen p-16">
