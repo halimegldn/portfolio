@@ -12,7 +12,7 @@ export function Navbar() {
     ]
 
     return (
-        <div className="flex h-[500px] py-6 bg-gradient-to-br from-[#1a1d23] via-[#222831] to-[#2d3748] text-white relative overflow-hidden">
+        <div className="flex h-[500px] py-6 text-white relative overflow-hidden">
             <div className="w-1/6 flex flex-col m-auto items-center py-12 bg-transparent backdrop-blur-sm relative z-10">
                 <nav className="flex flex-col gap-6 text-base">
                     {
