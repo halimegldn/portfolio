@@ -5,9 +5,9 @@ import { Code, Contact, Download, Github, Linkedin, Mail, Rocket, Send, User } f
 export function Navbar() {
 
     const navbarLinks = [
-        { id: "1", href: "/", icon: User, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Anasayfa" },
-        { id: "2", href: "#projects", icon: Code, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Projeler" },
-        { id: "3", href: "#iletisim", icon: Send, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "İletişim" },
+        { id: "1", href: "/", icon: User, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Home" },
+        { id: "2", href: "#projects", icon: Code, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Projects" },
+        { id: "3", href: "#iletisim", icon: Send, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Contact" },
 
     ]
 
@@ -49,7 +49,7 @@ export function Navbar() {
                     <div className="w-1/2 space-y-8">
                         <div className="space-y-4">
                             <h1 className="text-5xl font-bold leading-tight">
-                                Ben{" "}
+                                I'm{" "}
                                 <span className="text-white 400 bg-clip-text">
                                     Halime GİLDAN
                                 </span>
@@ -57,22 +57,22 @@ export function Navbar() {
                             <div className="text-2xl text-gray-300 font-light">Frontend Developer</div>
                         </div>
                         <p className="text-lg leading-relaxed text-gray-300 max-w-lg">
-                            Modern ve kullanıcı dostu web uygulamaları geliştiriyorum. Performans, tasarım ve kullanıcı deneyimini
-                            her zaman ön planda tutarak, yaratıcı çözümler üretiyorum.
-                            {/* <span className="text-[#00ADB5] font-medium"> yaratıcı çözümler</span> üretiyorum. */}
+                            I develop modern and user-friendly web applications. I focus on performance,
+                            design, and user experience to create creative and effective solutions. While developing applications,
+                            I mainly work with technologies like Next.js, React, Tailwind CSS, and Shadcn.
                         </p>
                         <div className="flex gap-8">
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-white">10+</div>
-                                <div className="text-sm text-white">Projeler</div>
+                                <div className="text-sm text-white">Projects</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-white">1+</div>
-                                <div className="text-sm text-white">Yıl Deneyim</div>
+                                <div className="text-sm text-white">Experience Year</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-white">100%</div>
-                                <div className="text-sm text-white">Memnuniyet</div>
+                                <div className="text-sm text-white">Satisfaction</div>
                             </div>
                         </div>
                         <div className="flex gap-4 pt-2">

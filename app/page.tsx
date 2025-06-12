@@ -17,8 +17,8 @@ export default function Home() {
         <div className="relative z-10 flex items-center justify-center min-h-screen p-16">
           <div className="w-full mx-auto text-center space-y-12 px-32">
             <div className="space-y-4">
-              <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Teknoloji tutkusu ve yaratıcılığı birleştirerek, dijital dünyada iz bırakacak projeler geliştiriyorum.
+              <p className="text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-bold">
+                My Projects
               </p>
             </div>
             <AppCard />
