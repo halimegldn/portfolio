@@ -18,7 +18,7 @@ export function Navbar() {
                     {
                         navbarLinks.map((l) => (
                             <Link href={l.href} key={l.id}
-                                className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-200 relative"
+                                className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 focus:bg-white/5 hover:text-white transition-all duration-200 relative"
                             >
                                 <l.icon className={l.iconClass} />
                                 <span className="font-medium">{l.title}</span>
@@ -50,7 +50,7 @@ export function Navbar() {
                         <div className="space-y-4">
                             <h1 className="text-5xl font-bold leading-tight">
                                 Ben{" "}
-                                <span className="bg-gradient-to-r from-[#00ADB5] via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                <span className="text-white 400 bg-clip-text">
                                     Halime GİLDAN
                                 </span>
                             </h1>
@@ -58,21 +58,21 @@ export function Navbar() {
                         </div>
                         <p className="text-lg leading-relaxed text-gray-300 max-w-lg">
                             Modern ve kullanıcı dostu web uygulamaları geliştiriyorum. Performans, tasarım ve kullanıcı deneyimini
-                            her zaman ön planda tutarak,
-                            <span className="text-[#00ADB5] font-medium"> yaratıcı çözümler</span> üretiyorum.
+                            her zaman ön planda tutarak, yaratıcı çözümler üretiyorum.
+                            {/* <span className="text-[#00ADB5] font-medium"> yaratıcı çözümler</span> üretiyorum. */}
                         </p>
                         <div className="flex gap-8">
                             <div className="text-center">
-                                <div className="text-2xl font-bold text-[#00ADB5]">10+</div>
-                                <div className="text-sm text-gray-400">Projeler</div>
+                                <div className="text-2xl font-bold text-white">10+</div>
+                                <div className="text-sm text-white">Projeler</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-2xl font-bold text-[#00ADB5]">1+</div>
-                                <div className="text-sm text-gray-400">Yıl Deneyim</div>
+                                <div className="text-2xl font-bold text-white">1+</div>
+                                <div className="text-sm text-white">Yıl Deneyim</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-2xl font-bold text-[#00ADB5]">100%</div>
-                                <div className="text-sm text-gray-400">Memnuniyet</div>
+                                <div className="text-2xl font-bold text-white">100%</div>
+                                <div className="text-sm text-white">Memnuniyet</div>
                             </div>
                         </div>
                         <div className="flex gap-4 pt-2">

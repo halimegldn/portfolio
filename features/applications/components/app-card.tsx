@@ -30,13 +30,13 @@ export function AppCard() {
     ]
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
 
 
             {
                 cards.map((c) => (
                     <div
-                        className="group relative h-[500px] w-full flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25]"
+                        className="group relative h-[500px] w-[300px] flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25] hover:w-full"
                         key={c.id}
                     >
                         <Image
