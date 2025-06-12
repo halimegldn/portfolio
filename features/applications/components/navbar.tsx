@@ -5,14 +5,13 @@ import { Code, Download, Github, Linkedin, Mail, Rocket, User } from "lucide-rea
 export function Navbar() {
 
     const navbarLinks = [
-        { href: "/", icon: User, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Anasayfa" },
-        { href: "#projects", icon: Code, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Projeler" },
+        { id: "1", href: "/", icon: User, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Anasayfa" },
+        { id: "2", href: "#projects", icon: Code, iconClass: "w-5 h-5 group-hover:scale-110 transition-transform duration-300", title: "Projeler" },
     ]
 
     const appLinks = [
-        { href: "/", icon: Github, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
-        { href: "/", icon: Linkedin, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
-        { href: "/", icon: Mail, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
+        { id: "1", href: "/", icon: Github, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
+        { id: "2", href: "/", icon: Linkedin, iconClass: "w-5 h-5 group-hover:text-[#00ADB5] transition-colors duration-300" },
     ]
 
     return (
@@ -34,7 +33,7 @@ export function Navbar() {
                 <nav className="flex flex-col gap-6 text-base">
                     {
                         navbarLinks.map((l) => (
-                            <Link href={l.href} key={l.href}
+                            <Link href={l.href} key={l.id}
                                 className="group flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-[#00ADB5] transition-all duration-200 relative"
                             >
                                 <l.icon className={l.iconClass} />
@@ -49,7 +48,7 @@ export function Navbar() {
                     {
                         appLinks.map((app) => (
                             <Link
-                                href={app.href}
+                                href={app.href} key={app.id}
                                 className="p-3 rounded-xl bg-white/5 hover:bg-[#00ADB5]/20 hover:scale-110 transition-all duration-300 group"
                             >
                                 <app.icon className={app.iconClass} />
