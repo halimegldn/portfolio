@@ -30,13 +30,13 @@ export function AppCard() {
     ]
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
 
 
             {
                 cards.map((c) => (
                     <div
-                        className="group relative h-[500px] w-[300px] flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25] hover:w-full"
+                        className="group relative h-[500px] w-10/12 flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25] hover:w-11/12"
                         key={c.id}
                     >
                         <Image
@@ -47,7 +47,7 @@ export function AppCard() {
                             className="absolute inset-0 h-full w-full object-cover"
                         />
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 from-30% p-4">
-                            <div className="w-48">
+                            <div className="w-10/12 text-start flex flex-col">
                                 <h2 className="text-2xl font-medium leading-tight text-white">
                                     {c.title}
                                 </h2>

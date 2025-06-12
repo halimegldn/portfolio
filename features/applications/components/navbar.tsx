@@ -32,18 +32,19 @@ export function Navbar() {
                 </div>
             </div>
             <div className="w-5/6 flex items-center justify-center p-16 relative z-10">
-                <div className="flex gap-20 items-center max-w-6xl">
+                <div className="flex gap-20 items-center w-full">
                     <div className="w-1/2 relative group">
                         <div className="relative">
-                            <div className=" overflow-hidden aspect-square w-1/2 h-1/2 mx-auto">
+                            <div className="overflow-hidden w-[400px] h-[250px] mx-auto rounded-lg">
                                 <Image
-                                    src="/resim.jpg"
-                                    width={500}
-                                    height={500}
+                                    src="/ben.jpg"
+                                    width={400}
+                                    height={250}
                                     alt="Profil Resmi"
-                                    className="object-cover w-full h-full shadow-2xl border-2 border-white/10 group-hover:scale-105 transition-transform duration-500 bg-white"
+                                    className="object-cover w-full h-full shadow-2xl group-hover:scale-105 transition-transform duration-500 bg-white"
                                 />
                             </div>
+
                         </div>
                     </div>
                     <div className="w-1/2 space-y-8">
