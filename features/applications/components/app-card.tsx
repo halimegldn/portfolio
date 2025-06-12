@@ -1,25 +1,28 @@
-import { Description } from "@radix-ui/react-dialog"
 import Image from "next/image";
 
 export function AppCard() {
 
     const cards = [
         {
+            id: "1",
             title: "The card title is here.",
             image: "/resim.jpg",
             Description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit"
         },
         {
+            id: "2",
             title: "The card title is here.",
             image: "/resim.jpg",
             Description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit"
         },
         {
+            id: "3",
             title: "The card title is here.",
             image: "/resim.jpg",
             Description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit"
         },
         {
+            id: "4",
             title: "The card title is here.",
             image: "/resim.jpg",
             Description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit"
@@ -34,6 +37,7 @@ export function AppCard() {
                 cards.map((c) => (
                     <div
                         className="group relative h-[500px] w-full flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25]"
+                        key={c.id}
                     >
                         <Image
                             src={c.image}
@@ -41,7 +45,6 @@ export function AppCard() {
                             width={100}
                             height={100}
                             className="absolute inset-0 h-full w-full object-cover"
-                            key={c.title}
                         />
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 from-30% p-4">
                             <div className="w-48">
@@ -58,7 +61,7 @@ export function AppCard() {
                     </div>
                 ))
             }
-            <div
+            {/* <div
                 className="group relative h-[500px] w-full flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25]"
             >
                 <img
@@ -79,7 +82,7 @@ export function AppCard() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

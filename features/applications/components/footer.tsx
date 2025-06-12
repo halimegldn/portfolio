@@ -12,8 +12,8 @@ export function Footer() {
     ]
 
     return (
-        <div id="iletisim" className="relative w-full bg-gradient-to-br from-[#1a1d23] via-[#222831] to-[#2d3748] py-10">
-            <div className="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00ADB5] to-transparent"></div>
+        <div id="iletisim" className=" w-full bg-gradient-to-br from-[#1a1d23] via-[#222831] to-[#2d3748] py-10">
+            {/* <div className="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00ADB5] to-transparent"></div> */}
 
             <div className="relative mt-5 max-w-4xl mx-auto flex flex-col items-center justify-center gap-8">
 
