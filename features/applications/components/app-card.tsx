@@ -1,6 +1,7 @@
+import { Uygulamalar } from "@/lib/generated/prisma";
 import Image from "next/image";
 
-export function AppCard() {
+export function AppCard({ myApps }: { myApps: Uygulamalar[] }) {
 
     const cards = [
         {
@@ -34,26 +35,26 @@ export function AppCard() {
 
 
             {
-                cards.map((c) => (
+                myApps.map((app) => (
                     <div
                         className="group relative h-[500px] w-10/12 flex-1 overflow-hidden rounded-2xl bg-rose-300 transition-all hover:grow-[1.25] hover:w-11/12"
-                        key={c.id}
+                        key={app.id}
                     >
                         <Image
-                            src={c.image}
-                            alt={c.title}
-                            width={100}
-                            height={100}
+                            src={app.filePath}
+                            alt={app.name}
+                            width={1000}
+                            height={1000}
                             className="absolute inset-0 h-full w-full object-cover"
                         />
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 from-30% p-4">
                             <div className="w-10/12 text-start flex flex-col">
                                 <h2 className="text-2xl font-medium leading-tight text-white">
-                                    {c.title}
+                                    {app.name}
                                 </h2>
                                 <div className="grid grid-rows-[0fr] transition-all  group-hover:grid-rows-[1fr]">
                                     <p className="mt-2 overflow-hidden text-white/70 opacity-0 transition duration-300 group-hover:opacity-100">
-                                        {c.Description}
+                                        {app.description}
                                     </p>
                                 </div>
                             </div>

@@ -2,8 +2,11 @@ import { Footer } from "@/features/applications/components/footer"
 import { Navbar } from "@/features/applications/components/navbar"
 import { AppCard } from "@/features/applications/components/app-card"
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation"
+import { GetMyApps } from "@/features/applications/data"
 
-export default function Home() {
+export default async function Home() {
+
+  const myApps = await GetMyApps();
 
   return (
     <div className="relative min-h-screen">
@@ -21,7 +24,7 @@ export default function Home() {
                 My Projects
               </p>
             </div>
-            <AppCard />
+            <AppCard myApps={myApps} />
           </div>
         </div>
       </div>
