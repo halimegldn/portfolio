@@ -5,10 +5,9 @@ import Link from "next/link";
 export function Footer() {
 
     const appLinks = [
-        { id: "1", href: "/", icon: Github, iconClass: "w-5 h-5 transition-colors duration-300 text-white" },
-        { id: "2", href: "/", icon: Linkedin, iconClass: "w-5 h-5 transition-colors duration-300 text-white" },
-        { id: "3", href: "/", icon: Mail, iconClass: "w-5 h-5 transition-colors duration-300 text-white" },
-
+        { id: "1", href: "https://github.com/halimegldn", icon: Github, iconClass: "w-5 h-5 transition-colors duration-300 text-white" },
+        { id: "2", href: "https://linkedin.com/in/halime-gildan-6751a1264", icon: Linkedin, iconClass: "w-5 h-5 transition-colors duration-300 text-white" },
+        { id: "3", href: "mailto:gildanhalime60@gmail.com", icon: Mail, iconClass: "w-5 h-5 transition-colors duration-300 text-white" },
     ]
 
     return (
