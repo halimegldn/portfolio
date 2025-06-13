@@ -9,6 +9,11 @@ datasource db {
 }
 
 model Uygulamalar {
-  id   String @id @default(cuid())
-  name String
+  id         String @id @default(cuid())
+  name       String
+  açıklama String
+  filePath   String
+  fileName   String
+  fileSize   Int
+  fileType   String
 }
